@@ -29,9 +29,9 @@ const routes = async (fastify: FastifyInstance, options: RegisterOptions) => {
     async (request: FastifyRequest, reply: FastifyReply) => {
       const page = (request.query as { page: number }).page;
 
-      const res = await zoro.fetchRecentEpisodes(page);
+      // const res = await zoro.fetchRecentEpisodes(page);
 
-      reply.status(200).send(res);
+      reply.status(200).send('');
     },
   );
 
